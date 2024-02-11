@@ -1,18 +1,18 @@
 package com.Blog_Application.Services.Imple;
 
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-import org.hibernate.service.Service;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.Blog_Application.Exception.*;
+import org.springframework.stereotype.Service;
+
 import com.Blog_Application.Entities.User;
 import com.Blog_Application.Exception.ResourceNotFoundException;
 import com.Blog_Application.Payload.UserDto;
 import com.Blog_Application.Repository.UserRepo;
-import com.Blog_Application.Services.UserServices;
+import com.Blog_Application.UserServices.UserServices;
 
+@Service
 public class userServiceImple implements UserServices{
 	
 	@Autowired
@@ -55,7 +55,7 @@ public class userServiceImple implements UserServices{
 	@Override
 	public void deleteUser(int userId) {
 		User user  = userRepo.findById(userId).orElseThrow(()-> new ResourceNotFoundException("User","Id",userId));
-		this.userRepo.deleteById(userId);
+		this.userRepo.delete(user);
 		
 	}
 	
