@@ -6,11 +6,11 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.Blog_Application.BlogServices.categoryService;
 import com.Blog_Application.Entities.Category;
 import com.Blog_Application.Exception.ResourceNotFoundException;
 import com.Blog_Application.Payload.CategoryDto;
 import com.Blog_Application.Repository.categoryRepo;
-import com.Blog_Application.UserServices.categoryService;
 
 
 @Service

@@ -1,4 +1,4 @@
-package com.Blog_Application.UserServices;
+package com.Blog_Application.BlogServices;
 
 import java.util.List;
 
