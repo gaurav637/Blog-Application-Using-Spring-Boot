@@ -7,11 +7,11 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.Blog_Application.BlogServices.UserServices;
 import com.Blog_Application.Entities.User;
 import com.Blog_Application.Exception.ResourceNotFoundException;
 import com.Blog_Application.Payload.UserDto;
 import com.Blog_Application.Repository.UserRepo;
-import com.Blog_Application.UserServices.UserServices;
 
 @Service
 public class userServiceImple implements UserServices{

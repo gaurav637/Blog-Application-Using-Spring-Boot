@@ -1,11 +1,17 @@
 package com.Blog_Application.Entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.annotation.Generated;
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -27,13 +33,9 @@ public class Category {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	
-//	@NotEmpty
-//	@Size(max=100,message="this title not sutable")
-//	@Column(name="title")
 	private String categoryTitle;
-	
-//	@NotNull
-//	@Column(name="Description")
 	private String categoryDescription;
+	
+	@OneToMany(mappedBy = "category",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+	private List<Post> cateList = new ArrayList<>();
 }
