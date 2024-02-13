@@ -39,7 +39,7 @@ public class GlobleControllerExceptionHandler {
 	
 	@ExceptionHandler(HttpRequestMethodNotSupportedException.class)
 	public ResponseEntity<String> handleHttpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException ex){
-		String string = "Method DELETE is not supported.   --- your request is not support your http request in your controller class ";
+		String string = "this http Method  is not supported.   --- your request is not support your http request in your controller class ";
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(string);
 	}
 }
