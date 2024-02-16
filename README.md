@@ -1,7 +1,7 @@
- Blog Application
+            ###Blog Application
 This is a blog application developed using Spring Boot, Java, MySQL, Hibernate, JPA, Spring Security, and JWT. It allows users to create, read, update, and delete blog posts.
 
-Features
+# Features
 User authentication and authorization using Spring Security and JWT.
 CRUD operations for managing blog posts.
 Secure endpoints to ensure data integrity.
@@ -35,20 +35,13 @@ Copy code
 cd blog-application
 Update the application.properties file with your MySQL database configuration:
 
-properties
+# properties
 Copy code
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
 spring.datasource.username=your_mysql_username
 spring.datasource.password=your_mysql_password
 
-Run the application:
-bash
-Copy code
-mvn spring-boot:run
-Usage
-Once the application is running, you can access the endpoints using your preferred web browser or Postman. Ensure you have a valid JWT token for authenticated endpoints.
 
-
-Contributing
+# Contributing
 Contributions are welcome! Please feel free to open a pull request or submit an issue for any bugs, feature requests, or enhancements.
 
