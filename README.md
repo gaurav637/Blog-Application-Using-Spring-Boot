@@ -48,3 +48,6 @@ Contributions are welcome! Please feel free to open a pull request or submit an 
 
 <img width="488" alt="Screenshot 2024-02-17 at 12 21 49 AM" src="https://github.com/gaurav637/Blog-Application-Using-Spring-Boot/assets/141955844/4cdb1384-e0a8-47b6-9c55-4c39978039ec">
 
+# POSTMAN ALL REQUESTS
+
+<img width="1280" alt="Screenshot 2024-02-17 at 12 37 41 AM" src="https://github.com/gaurav637/Blog-Application-Using-Spring-Boot/assets/141955844/6d2d93b5-47a4-40ee-83bb-5b347ea1d545">
