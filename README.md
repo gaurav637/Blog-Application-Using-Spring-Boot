@@ -1,4 +1,4 @@
-# #Blog Application
+# #Blog Application 🚀
 This is a blog application developed using Spring Boot, Java, MySQL, Hibernate, JPA, Spring Security, and JWT. It allows users to create, read, update, and delete blog posts.
 
 # Features
@@ -41,7 +41,10 @@ spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
 spring.datasource.username=your_mysql_username
 spring.datasource.password=your_mysql_password
 
-
 # Contributing
 Contributions are welcome! Please feel free to open a pull request or submit an issue for any bugs, feature requests, or enhancements.
+
+
+
+<img width="488" alt="Screenshot 2024-02-17 at 12 21 49 AM" src="https://github.com/gaurav637/Blog-Application-Using-Spring-Boot/assets/141955844/4cdb1384-e0a8-47b6-9c55-4c39978039ec">
 
