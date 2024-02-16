@@ -1,4 +1,4 @@
-            ###Blog Application
+  ##Blog Application
 This is a blog application developed using Spring Boot, Java, MySQL, Hibernate, JPA, Spring Security, and JWT. It allows users to create, read, update, and delete blog posts.
 
 # Features
