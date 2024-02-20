@@ -52,3 +52,7 @@ Contributions are welcome! Please feel free to open a pull request or submit an 
 
 
 <img width="1280" alt="Screenshot 2024-02-17 at 12 41 15 AM" src="https://github.com/gaurav637/Blog-Application-Using-Spring-Boot/assets/141955844/02157410-e72d-4f13-988e-ce5a606eb1ba">
+
+# DATABASE
+
+<img width="688" alt="Screenshot 2024-02-20 at 10 07 09 PM" src="https://github.com/gaurav637/Blog-Application-Using-Spring-Boot/assets/141955844/17633ea7-5039-466d-bdeb-6fd6e43e56e7">
