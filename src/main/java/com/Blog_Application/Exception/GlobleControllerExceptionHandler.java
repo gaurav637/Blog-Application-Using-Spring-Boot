@@ -2,19 +2,15 @@ package com.Blog_Application.Exception;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-
 import com.Blog_Application.Payload.apiResponse;
 
-import jakarta.persistence.FieldResult;
 
 @RestControllerAdvice
 public class GlobleControllerExceptionHandler {
@@ -39,7 +35,7 @@ public class GlobleControllerExceptionHandler {
 	
 	@ExceptionHandler(HttpRequestMethodNotSupportedException.class)
 	public ResponseEntity<String> handleHttpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException ex){
-		String string = "Method DELETE is not supported.   --- your request is not support your http request in your controller class ";
+		String string = "this http Method  is not supported.   --- your request is not support your http request in your controller class ";
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(string);
 	}
 }
