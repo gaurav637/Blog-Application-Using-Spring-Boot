@@ -12,11 +12,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.Blog_Application.BlogServices.UserServices;
 import com.Blog_Application.Payload.UserDto;
 import com.Blog_Application.Payload.apiResponse;
-
 import jakarta.validation.Valid;
 
 @RestController
@@ -41,8 +39,8 @@ public class UserController {
 	}
 	
 	
-	@GetMapping("USER/{userId}")
-	public ResponseEntity<UserDto> getUserByIdInController(@PathVariable("userId") int userId){
+	@GetMapping("USER/{USERId}")
+	public ResponseEntity<UserDto> getUserByIdInController(@PathVariable("USERId") int userId){
 		
 		return ResponseEntity.ok(userServices.getUserById(userId));
 	}
